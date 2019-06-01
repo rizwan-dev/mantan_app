@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:background="#003366" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:gravity="center_horizontal" android:id="@+id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TableLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="391dp" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/White" android:gravity="center" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Registration"/>
+            <TableRow android:id="@+id/tableRow2" android:scrollbars="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15dp" android:textColor="@color/White" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name :"/>
+                <EditText android:textColor="@color/Purple" android:id="@+id/txtname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:singleLine="true"/>
+            </TableRow>
+            <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15dp" android:textColor="@color/White" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email :"/>
+                <EditText android:textColor="@color/Purple" android:id="@+id/txtemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:singleLine="true"/>
+            </TableRow>
+            <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15dp" android:textColor="@color/White" android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mo no. :"/>
+                <EditText android:textColor="@color/Purple" android:id="@+id/txtmono" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:singleLine="true" android:inputType="phone"/>
+            </TableRow>
+            <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15dp" android:textColor="@color/White" android:id="@+id/txtcitydsdsfg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product key :"/>
+                <EditText android:textColor="@color/Purple" android:id="@+id/txtproductkey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:singleLine="true"/>
+            </TableRow>
+            <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15dp" android:textColor="@color/White" android:id="@+id/txtcitydsdsfg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Area :"/>
+                <EditText android:textColor="@color/Purple" android:id="@+id/txtarea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:singleLine="true"/>
+            </TableRow>
+            <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15dp" android:textColor="@color/White" android:id="@+id/txtcitydsdsfg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="City :"/>
+                <EditText android:textColor="@color/Purple" android:id="@+id/txtcity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:singleLine="true"/>
+            </TableRow>
+            <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15dp" android:textColor="@color/White" android:id="@+id/txtcitydsdsfg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="State :"/>
+                <EditText android:textColor="@color/Purple" android:id="@+id/txtstate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:singleLine="true"/>
+            </TableRow>
+            <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15dp" android:textColor="@color/White" android:id="@+id/txtcitydsdsfg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pincode  :"/>
+                <EditText android:textColor="@color/Purple" android:id="@+id/txtpincode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:singleLine="true" android:inputType="number"/>
+            </TableRow>
+            <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <Button android:id="@+id/btnregister" android:background="@drawable/btnlogingbg" android:layout_width="100dp" android:layout_height="35dp" android:text="Register" android:shadowColor="#fff" android:shadowDx="2" android:shadowDy="2" android:shadowRadius="4" android:onClick="register" style="?android:attr/buttonStyleSmall"/>
+                <Button android:layout_gravity="center" android:id="@+id/reset" android:background="@drawable/btnclosebg" android:layout_width="100dp" android:layout_height="35dp" android:text="Clear" android:shadowColor="#fff" android:shadowDx="2" android:shadowDy="2" android:shadowRadius="4" android:onClick="register" style="?android:attr/buttonStyleSmall"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

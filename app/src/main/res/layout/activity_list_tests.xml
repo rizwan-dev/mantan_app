@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="true">
+    <TextView android:textSize="25dp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/txtopt" android:background="#ffd633" android:paddingTop="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Practice Question Paper "/>
+    <View android:id="@+id/linecode" android:background="#ff1a1a" android:layout_width="match_parent" android:layout_height="4dp" android:layout_marginTop="5dp" android:layout_below="@+id/txtopt"/>
+    <ListView android:id="@+id/listseltests" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:dividerHeight="6dp" android:layout_below="@+id/linecode" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/txttestlist1" android:background="#ffd633" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="22dp" android:textColor="@color/White" android:id="@+id/txtpassedtest" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Exam Summary" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/TextView01" android:background="#003366" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="15sp" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="center" android:id="@+id/tipsads" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/TextView01" android:layout_alignBottom="@+id/TextView01" android:layout_alignParentRight="true"/>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/TextView01" android:layout_below="@+id/txttestlist1" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+        <RelativeLayout android:gravity="center" android:id="@+id/layoutquestions" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+</RelativeLayout>

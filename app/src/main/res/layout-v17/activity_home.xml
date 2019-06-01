@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="25dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20dp" android:textStyle="bold" android:gravity="center" android:background="#ffd633" android:layout_width="match_parent" android:layout_height="40dp" android:text="Manthan Publication" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:layout_weight="1">
+                <TextView android:gravity="center" android:id="@+id/practicetesttextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="सराव प्रश्नपत्रिका " android:drawableTop="@drawable/practiceexm" android:drawablePadding="10dp" android:layout_weight="1"/>
+                <TextView android:gravity="center" android:id="@+id/liveexamTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Final Exam " android:drawableTop="@drawable/finalexam" android:drawablePadding="10dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_weight="1">
+                <TextView android:gravity="center" android:id="@+id/ourProductTextvi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="मंथन APPS" android:drawableTop="@drawable/moreproduct" android:drawablePadding="10dp" android:layout_weight="1"/>
+                <TextView android:gravity="center" android:id="@+id/enquiryTextv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="About us" android:drawableTop="@drawable/enquiry" android:drawablePadding="10dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

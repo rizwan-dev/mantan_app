@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:background="@drawable/stat" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10sp" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:gravity="center" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10sp" android:text="Maharashtra Talent Search" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            <TableLayout android:id="@+id/mainMenuTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_centerHorizontal="true">
+                <TableRow android:gravity="center" android:padding="10dp" android:layout_width="match_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal">
+                        <Button android:textColor="@color/White" android:id="@+id/btnchapter_wise" android:background="@drawable/one" android:padding="10sp" android:layout_width="100sp" android:layout_height="100sp" android:layout_marginRight="20dp" android:text="Chapter Wise Exam" android:layout_alignParentTop="true" android:onClick="show"/>
+                        <Button android:textColor="@color/White" android:id="@+id/btnpractice_exam" android:background="@drawable/main5" android:padding="10sp" android:layout_width="100sp" android:layout_height="100sp" android:layout_marginLeft="20dp" android:text="Practice Exam" android:layout_alignParentTop="true" android:onClick="show"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="center" android:padding="10dp" android:layout_width="match_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal">
+                        <Button android:textColor="@color/White" android:id="@+id/btn_stat" android:background="@drawable/main4" android:layout_width="100sp" android:layout_height="100sp" android:layout_marginRight="20dp" android:text="My Statistics" android:layout_toRightOf="@+id/btnchapter_wise" android:onClick="show"/>
+                        <Button android:textColor="@color/White" android:id="@+id/btnlive_exam" android:background="@drawable/main3" android:layout_width="100sp" android:layout_height="100sp" android:layout_marginLeft="20dp" android:text="Live Exam" android:onClick="show"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="center" android:padding="10dp" android:layout_width="match_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal">
+                        <Button android:textColor="@color/White" android:id="@+id/btnnews" android:background="@drawable/main2" android:layout_width="100sp" android:layout_height="100sp" android:layout_marginRight="20dp" android:text="News" android:onClick="show"/>
+                        <Button android:textColor="@color/White" android:id="@+id/btnOurProducts" android:background="@drawable/seventh1" android:layout_width="110sp" android:layout_height="100sp" android:layout_marginLeft="20dp" android:text="Our Products" android:layout_centerVertical="true" android:onClick="showPro"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="center" android:layout_width="match_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal">
+                        <com.google.android.gms.ads.AdView android:id="@+id/ad_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_below="@+id/btn_stat" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:adSize="BANNER" app:adUnitId="@string/banner_ad_unit_id"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

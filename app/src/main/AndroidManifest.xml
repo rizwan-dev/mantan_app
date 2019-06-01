@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="consys.onlineexam.manthan3offlineexam" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <application android:allowBackup="true" android:allowClearUserData="true" android:icon="@drawable/manthan1" android:label="@string/app_name" android:name="consys.onlineexam.helper.manthanCoach" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:label="@string/app_name" android:name="consys.onlineexam.manthan3offlineexam.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.ExamActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.TestSubActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.ResultActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.SelectSubjectActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.MainMenuActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.JEENewsActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.StudyMaterialActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.TipsActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.StudyChapterActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.StudySolutionActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.NetPracticeActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.TestListActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.MyStatActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.ShowStatActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.RegisterActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.ShowQuestionsActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.UpdateActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.AboutActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.AboutAppActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.SMSFilter"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.MainActivity"/>
+        <!--<activity android:name="org.achartengine.GraphicalActivity"/>-->
+        <service android:name="consys.onlineexam.manthan3offlineexam.TipNotifyService"/>
+        <service android:name="consys.onlineexam.manthan3offlineexam.CommonNotification"/>
+        <receiver android:name="consys.onlineexam.manthan3offlineexam.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="Live Exam Schedule" android:name="consys.onlineexam.manthan3offlineexam.LiveExamSchedule" android:theme="@style/Theme.AppCompat"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.QuoteDownloadFileServer"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.NewsPaidUser"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.NewsUnpaidInTextView"/>
+        <receiver android:enabled="true" android:name="consys.onlineexam.manthan3offlineexam.AlarmReceiver"/>
+        <service android:name="consys.onlineexam.manthan3offlineexam.InspirationalQuoteService"/>
+        <activity android:label="@string/title_activity_creating_wi_fi_hotspot" android:name="consys.onlineexam.manthan3offlineexam.wifiSocket.CreatingWiFiHotspot"/>
+        <activity android:label="@string/title_activity_search_wifi" android:name="consys.onlineexam.manthan3offlineexam.wifiSocket.SearchWifi"/>
+        <activity android:label="@string/title_activity_socket_connector_server" android:name="consys.onlineexam.manthan3offlineexam.wifiSocket.SocketConnectorServer"/>
+        <activity android:label="@string/title_activity_socket_connection_client" android:name="consys.onlineexam.manthan3offlineexam.wifiSocket.SocketConnectionClient"/>
+        <activity android:label="@string/title_activity_set_up_hot_spot_name" android:name="consys.onlineexam.manthan3offlineexam.wifiSocket.SetUpHotSpotName"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.AgreementActivity"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.HomePage"/>
+        <activity android:name="consys.onlineexam.manthan3offlineexam.EnquiryForm"/>
+       <!-- <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        --><!--<activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        --><!--<provider android:authorities="consys.onlineexam.manthan3offlineexam.google_measurement_service" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"/>-->
+        <!--<receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+            </intent-filter>
+        </receiver>-->
+       <!-- <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>-->
+    </application>
+</manifest>

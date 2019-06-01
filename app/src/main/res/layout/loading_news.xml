@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/lin1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#33ccff" android:id="@+id/imageReload" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="update" android:drawableLeft="@drawable/reload"/>
+    </LinearLayout>
+    <View android:id="@+id/v2" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/lin1"/>
+    <WebView android:id="@+id/newsWebView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/v2"/>
+    <com.google.android.gms.ads.AdView android:id="@+id/ad_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:adSize="BANNER" app:adUnitId="@string/banner_ad_unit_id"/>
+</RelativeLayout>

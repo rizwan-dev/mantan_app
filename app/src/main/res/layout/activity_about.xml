@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/txttestlist1" android:background="#ffd633" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/White" android:id="@+id/txtpassedtest" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="About Us" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <com.google.android.gms.ads.AdView android:id="@+id/ad_viewS" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_below="@+id/btn_stat" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:adSize="BANNER" app:adUnitId="@string/banner_ad_unit_id"/>
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="50sp" android:layout_above="@+id/TextView01" android:layout_below="@+id/txttestlist1" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/tips_layout" android:padding="20dp" android:paddingTop="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_below="@+id/txtque">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="center" android:id="@+id/textListOfProducts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Our Other Products"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/jeeList" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:onClick="gotoPlayStore">
+                <ImageView android:id="@+id/jeeimg" android:background="@drawable/manthan1" android:paddingTop="20dp" android:layout_width="100dp" android:layout_height="100dp"/>
+                <TextView android:textSize="17dp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2nd MTSE-English"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ibpsList" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:onClick="gotoPlayStore">
+                <ImageView android:id="@+id/ibpsimg" android:background="@drawable/manthan3" android:paddingTop="20dp" android:layout_width="100dp" android:layout_height="100dp"/>
+                <TextView android:textSize="17dp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3rd MTSE-मराठी"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

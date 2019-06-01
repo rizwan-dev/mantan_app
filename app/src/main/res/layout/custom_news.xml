@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rel1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/mainnews" android:background="#003366" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true"/>
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="20dp" android:textColor="@color/White" android:id="@+id/txtnewheader" android:background="#003366" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Large Text"/>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow2" android:background="@color/White" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tableRow1" android:layout_alignParentLeft="true">
+        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tableRow1" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/imgnews" android:layout_width="50dp" android:layout_height="50dp"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3" android:background="@color/White" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tableRow2" android:layout_alignTop="@+id/tableRow2">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="18dp" android:id="@+id/txtnewdetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Text" android:layout_below="@+id/tableRow3" android:layout_alignLeft="@+id/tableRow3"/>
+        </TableRow>
+    </TableRow>
+</RelativeLayout>
